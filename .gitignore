@@ -1,0 +1,17 @@
+/nbproject/private/
+
+/node_modules
+/public/storage
+/public/hot
+/storage/*.key
+/vendor/*
+
+.DS_Store
+.env
+nbproject/*
+
+public/images/*
+public/thumbnail/*
+public/uploads/*
+vendor/composer/*
+vendor/*
