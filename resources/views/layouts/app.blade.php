@@ -63,6 +63,9 @@
                                         <a class="dropdown-item" href="{{ route('admin_user_list') }}">
                                             Admin Interface
                                         </a>
+                                        <a class="dropdown-item" href="{{ route('todo_list') }}">
+                                            My List
+                                        </a>
                                     @endif
 
 

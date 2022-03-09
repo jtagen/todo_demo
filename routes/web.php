@@ -15,12 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
+
+/* End-user routes */
 Route::get('/', 'ToDoController@index')->name('todo_list');
 Route::post('/create', 'TodoController@create')->name('todo_create');
 Route::post('/complete', 'TodoController@complete')->name('todo_complete');
 Route::post('/delete', 'TodoController@delete')->name('todo_delete');
 
 
-
-	Route::get('/admin/list', 'AdminController@list')->name('admin_user_list');
-	Route::get('/admin/view/{user_id}', 'AdminController@view')->name('admin_user_view');
+/*  Admin routes  */
+Route::get('/admin/list', 'AdminController@list')->name('admin_user_list');
+Route::get('/admin/view/{user_id}', 'AdminController@view')->name('admin_user_view');
