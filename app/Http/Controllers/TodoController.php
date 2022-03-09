@@ -17,7 +17,6 @@ class TodoController extends Controller
     public function index()
     {
 
-
         $items = Todo::where('user_id', Auth::user()->id)->where('is_complete',0)->where('is_deleted',0)->orderBy('id')->get();
         return view('list')->with(['items'=>$items]);
     }

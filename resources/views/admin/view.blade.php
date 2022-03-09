@@ -27,7 +27,7 @@
                                         @if ($item->is_deleted)
                                             deleted
                                         @endif
-                                        @if ($item->is_completed)
+                                        @if ($item->is_complete)
                                             completed
                                         @endif
                                         
